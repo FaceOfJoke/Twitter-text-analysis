@@ -25,4 +25,4 @@ with open('data.csv', 'a') as file:
             writer.writerow(["created_at", "text", "screen_name"])
 myStreamListener = MyStreamListener()
 myStream = tweepy.Stream(auth = api.auth, listener=myStreamListener)
-myStream.filter(track=['truck'])
+myStream.filter(track=['track'])
